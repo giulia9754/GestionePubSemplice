@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="stile.css" />
+    </head>
+    <body>
+        <h1>Gestione Pub</h1>
+        <!--Sezione per aggiungere nuovi articoli al menù-->
+        <section id="add-item">
+            <h2>Aggiungi Articolo al Menù</h2>
+            <input type="text" id="item-name" placeholder="Nome Articolo" />
+            <input
+                type="number"
+                id="item-price"
+                placeholder="Prezzo Articolo"
+            />
+            <button onclick="aggiungiArticolo()">Aggiungi</button>
+            <!--Sezione per visualizzare il menù-->
+            <section id="menu">
+                <h2>Menu Attuale</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Prezzo</th>
+                            <th>Azioni</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-items"></tbody>
+                </table>
+            </section>
+        </section>
+        <section id="orders">
+            <h2>Gestione ordini</h2>
+            <div id="order-list"></div>
+            <button onclick="aggiungiOrdine()">Aggiungi Ordine</button>
+        </section>
+    </body>
+    <script src="app.js"></script>
+</html>
